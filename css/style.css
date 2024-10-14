@@ -9,19 +9,15 @@ body {
 
 
 
-    /* Increase the size of the preview when hovering */
-    .enlarged-preview {
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .enlarged-preview:hover {
-        transform: scale(1.1); /* Slightly zooms the image on hover */
-    }
-
-    /* Optional: customize lightbox size */
     .lightbox img {
-        max-width: 80%; /* Adjust to desired size */
-        max-height: 80%;
+        max-width: 90%; /* Controls the image size in the popup, adjust this as needed */
+        max-height: 90%; /* Ensures the image fits well within the viewport */
+        margin: auto; /* Centers the image */
+    }
+    
+    /* Optional: Add transitions or effects */
+    .lightbox img {
+        transition: all 0.3s ease-in-out; /* Adds a smooth zoom-in effect */
     }
 
 
