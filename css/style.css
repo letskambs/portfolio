@@ -7,6 +7,27 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+
+    /* Increase the size of the preview when hovering */
+    .enlarged-preview {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .enlarged-preview:hover {
+        transform: scale(1.1); /* Slightly zooms the image on hover */
+    }
+
+    /* Optional: customize lightbox size */
+    .lightbox img {
+        max-width: 80%; /* Adjust to desired size */
+        max-height: 80%;
+    }
+
+
+
+
+
 a {
     color: #222222;
     transition: all .3s;
