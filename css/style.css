@@ -24,6 +24,10 @@ a:focus {
     box-shadow: none;
 }
 
+.collapse{
+    visibility:visible !important;
+}
+
 
 /**********************************/
 /****** Layout with Sidebar *******/
@@ -312,8 +316,34 @@ a:focus {
     background: #ffffff;
 }
 
+
+/* By default, hide both desktop and mobile video */
+.desktop-video, .mobile-video {
+    display: none;
+}
+
+/* Show desktop video only on large screens (e.g., desktop view) */
+@media only screen and (min-width: 1024px) {
+    .desktop-video {
+        display: block;
+    }
+    .mobile-video {
+        display: none;
+    }
+}
+
+/* Show mobile video only on small screens (e.g., mobile view) */
+@media only screen and (max-width: 1023px) {
+    .desktop-video {
+        display: none;
+    }
+    .mobile-video {
+        display: block;
+    }
+}
+
 .header .content-inner {
-    padding: 100px 30px;
+
     background-size: contain;
 }
 
