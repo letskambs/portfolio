@@ -540,11 +540,11 @@ r<!DOCTYPE html><html lang="en"><head>
                     const hiddenContent = document.getElementById('hiddenContent');
                 
                     viewMoreBtn.addEventListener('click', function() {
-                        if (hiddenContent.style.maxHeight === '500px') {
+                        if (hiddenContent.style.maxHeight === '300px') {
                             hiddenContent.style.maxHeight = hiddenContent.scrollHeight + 'px';
                             viewMoreBtn.innerText = 'View Less';
                         } else {
-                            hiddenContent.style.maxHeight = '500px';
+                            hiddenContent.style.maxHeight = '300px';
                             viewMoreBtn.innerText = 'View More';
                         }
                     });
