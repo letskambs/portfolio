@@ -330,20 +330,7 @@ r<!DOCTYPE html><html lang="en"><head>
                     </div>
                 </div>
                 
-                <script>
-                    const viewMoreBtn = document.getElementById('viewMoreBtn');
-                    const hiddenContent = document.getElementById('hiddenContent');
-                
-                    viewMoreBtn.addEventListener('click', function() {
-                        if (hiddenContent.style.maxHeight === '300px') {
-                            hiddenContent.style.maxHeight = hiddenContent.scrollHeight + 'px';
-                            viewMoreBtn.innerText = 'View Less';
-                        } else {
-                            hiddenContent.style.maxHeight = '300px';
-                            viewMoreBtn.innerText = 'View More';
-                        }
-                    });
-                </script>
+               
                 
                 <!-- kick off end -->
                     <div class="service" id="service">
@@ -548,19 +535,20 @@ r<!DOCTYPE html><html lang="en"><head>
             }
         </script>
 
-        <script>
-            function toggleContent() {
-                var content = document.querySelector('.extra-content');
-                var button = document.getElementById('toggleButton');
-                if (content.style.display === "none") {
-                    content.style.display = "block";
-                    button.innerText = "View Less";
-                } else {
-                    content.style.display = "none";
-                    button.innerText = "View More";
-                }
-            }
-        </script>
+               <script>
+                    const viewMoreBtn = document.getElementById('viewMoreBtn');
+                    const hiddenContent = document.getElementById('hiddenContent');
+                
+                    viewMoreBtn.addEventListener('click', function() {
+                        if (hiddenContent.style.maxHeight === '600px') {
+                            hiddenContent.style.maxHeight = hiddenContent.scrollHeight + 'px';
+                            viewMoreBtn.innerText = 'View Less';
+                        } else {
+                            hiddenContent.style.maxHeight = '600px';
+                            viewMoreBtn.innerText = 'View More';
+                        }
+                    });
+                </script>
     
 
 </body></html>
