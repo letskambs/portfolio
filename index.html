@@ -330,7 +330,20 @@ r<!DOCTYPE html><html lang="en"><head>
                     </div>
                 </div>
                 
-               
+               <script>
+                    const viewMoreBtn = document.getElementById('viewMoreBtn');
+                    const hiddenContent = document.getElementById('hiddenContent');
+                
+                    viewMoreBtn.addEventListener('click', function() {
+                        if (hiddenContent.style.maxHeight === '300px') {
+                            hiddenContent.style.maxHeight = hiddenContent.scrollHeight + 'px';
+                            viewMoreBtn.innerText = 'View Less';
+                        } else {
+                            hiddenContent.style.maxHeight = '300px';
+                            viewMoreBtn.innerText = 'View More';
+                        }
+                    });
+                </script>
                 
                 <!-- kick off end -->
                 <div class="space" id="space">
@@ -535,20 +548,7 @@ r<!DOCTYPE html><html lang="en"><head>
             }
         </script>
 
-               <script>
-                    const viewMoreBtn = document.getElementById('viewMoreBtn');
-                    const hiddenContent = document.getElementById('hiddenContent');
-                
-                    viewMoreBtn.addEventListener('click', function() {
-                        if (hiddenContent.style.maxHeight === '300px') {
-                            hiddenContent.style.maxHeight = hiddenContent.scrollHeight + 'px';
-                            viewMoreBtn.innerText = 'View Less';
-                        } else {
-                            hiddenContent.style.maxHeight = '300px';
-                            viewMoreBtn.innerText = 'View More';
-                        }
-                    });
-                </script>
+               
     
 
 </body></html>
