@@ -369,6 +369,34 @@
                             </div>
                         </div>
 
+                        <!--trial-->
+                        <div class="row portfolio-container">
+    <!-- Portfolio Item 1 -->
+    <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+        <div class="portfolio-wrap">
+            <figure>
+                <img src="images/portfolio/paunoonoo-res.png" class="img-fluid" alt="">
+                <!-- Preview button triggers the modal -->
+                <a href="javascript:void(0)" class="link-preview" title="Preview" onclick="openModal('paunoonooModal')">
+                    <i class="fa fa-eye"></i>
+                </a>
+                <a href="https://www.paunoonoo.art/" target="_blank" class="link-details"><i class="fa fa-link"></i></a>
+                <a class="portfolio-title" href="#">paunoonoo.com <span>Web Development</span></a>
+            </figure>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio Item 1 -->
+    <div id="paunoonooModal" class="modal">
+        <span class="close" onclick="closeModal('paunoonooModal')">&times;</span>
+        <img class="modal-content" id="img01" src="images/portfolio/paunoonoo-res.png" alt="paunoonoo.com">
+        <div class="caption">paunoonoo.com</div>
+    </div>
+
+    <!-- Repeat for the rest of the portfolio items -->
+</div>
+                        <!--trail end-->
+
                         <div class="row portfolio-container">
                           
                             <div class="col-lg-4 col-md-6 portfolio-item web-dev">
@@ -527,8 +555,17 @@
         
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        
-
+        <script>
+                // Open the modal
+                function openModal(modalId) {
+                    document.getElementById(modalId).style.display = "block";
+                }
+                
+                // Close the modal
+                function closeModal(modalId) {
+                    document.getElementById(modalId).style.display = "none";
+                }
+        </script>
        
       <script>            
             window.addEventListener('resize', handleVideoDisplay);
